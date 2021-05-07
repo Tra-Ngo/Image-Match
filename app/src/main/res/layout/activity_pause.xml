@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DA3A3A"
+    tools:context=".PauseActivity">
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@drawable/custom_button_2"
+        android:text="@string/menu1"
+        android:textSize="@dimen/sp36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRestart"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@drawable/custom_button_2"
+        android:text="@string/menu2"
+        android:textSize="@dimen/sp36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContinue" />
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/custom_button_2"
+        android:text="@string/menu3"
+        android:textSize="@dimen/sp36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRestart"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
